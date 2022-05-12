@@ -14,4 +14,8 @@
   <ItemGroup>
     <ProjectReference Include="..\Bwire.Core\Bwire.Core.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Inventory\Indexes\" />
+    <Folder Include="Inventory\Warehouses\" />
+  </ItemGroup>
 </Project>

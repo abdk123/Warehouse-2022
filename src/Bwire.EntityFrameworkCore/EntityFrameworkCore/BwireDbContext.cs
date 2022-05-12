@@ -3,6 +3,8 @@ using Abp.Zero.EntityFrameworkCore;
 using Bwire.Authorization.Roles;
 using Bwire.Authorization.Users;
 using Bwire.MultiTenancy;
+using Bwire.Inventory.Warehouses;
+using Bwire.Inventory.Indexes;
 
 namespace Bwire.EntityFrameworkCore
 {
@@ -14,5 +16,10 @@ namespace Bwire.EntityFrameworkCore
             : base(options)
         {
         }
+
+        public DbSet<Warehouse> Warehouses { get; set; }
+        public DbSet<City> Cities { get; set; }
+        public DbSet<Country> Countries { get; set; }
+        public DbSet<Area> Areas { get; set; }
     }
 }
