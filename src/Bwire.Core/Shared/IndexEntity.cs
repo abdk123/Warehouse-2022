@@ -1,8 +1,4 @@
-﻿using Abp.Domain.Entities;
-using Abp.Domain.Entities.Auditing;
-using Bwire.Shared;
-
-namespace Bwire.Inventory.Indexes
+﻿namespace Bwire.Shared
 {
     public class IndexEntity : BwireEntity
     {

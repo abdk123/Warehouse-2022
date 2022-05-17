@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Bwire.Inventory.Warehouses
 {
-    public class Warehouse : BwireEntity
+    public class Warehouse : Entity<long>
     {
         public string Name { get; set; }
         public string Description { get; set; }

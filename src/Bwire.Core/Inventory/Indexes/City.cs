@@ -2,7 +2,7 @@
 
 namespace Bwire.Inventory.Indexes
 {
-    public class City : BwireEntity
+    public class City : IndexEntity
     {
     }
 }

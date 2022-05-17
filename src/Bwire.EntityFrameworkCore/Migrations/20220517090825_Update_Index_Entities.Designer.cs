@@ -4,14 +4,16 @@ using Bwire.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Bwire.Migrations
 {
     [DbContext(typeof(BwireDbContext))]
-    partial class BwireDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220517090825_Update_Index_Entities")]
+    partial class Update_Index_Entities
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
