@@ -5,6 +5,7 @@ using Bwire.Authorization.Users;
 using Bwire.MultiTenancy;
 using Bwire.Inventory.Warehouses;
 using Bwire.Inventory.Indexes;
+using Bwire.Inventory.Suppliers;
 
 namespace Bwire.EntityFrameworkCore
 {
@@ -21,5 +22,6 @@ namespace Bwire.EntityFrameworkCore
         public DbSet<City> Cities { get; set; }
         public DbSet<Country> Countries { get; set; }
         public DbSet<Area> Areas { get; set; }
+        public DbSet<Supplier> Suppliers { get; set; }
     }
 }

@@ -4,14 +4,16 @@ using Bwire.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Bwire.Migrations
 {
     [DbContext(typeof(BwireDbContext))]
-    partial class BwireDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220517132201_Create_Supplier_Entity")]
+    partial class Create_Supplier_Entity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
